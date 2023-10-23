@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+    * {
+        margin: 0;
+        pad: 0;
+    }
+
+    .main {
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 5)50%);
+        background: linear-gradient(45deg, black, red);
+        background: url(/moonlit-dark-night-sky-darkness-wallpaper-f8b69d88f0101cc8804c01bec8e254aa.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+
+
+    }
+    .main1{
+        background-color: rgba(0, 0, 0, 0.56);
+        height: 100vh;
+    }
+
+    .navbar {
+
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 200px;
+        float: left;
+        height: 70px;
+
+    }
+
+    .logo {
+        color: #33ccff;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+
+    }
+
+    .menu {
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+
+    ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 50px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: rgb(223, 223, 22);
+        font-family: sans-serif;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+
+    }
+
+    ul li a:hover {
+        color: #33ccff;
+    }
+
+    .search {
+        width: 330px;
+        margin-left: 270px;
+        float: left;
+    }
+
+
+    .srch {
+        font-family: '' 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid brown;
+        margin-top: 12px;
+        color: brown;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-radius: 0px 10px 0px;
+
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        background: rgb(227, 159, 135);
+        border: 2px solid black;
+        margin-top: 12px;
+        color: brown;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .btn:hover {
+        background-color: #fff;
+        cursor: pointer;
+
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .srch:focus {
+        outline: none;
+    }
+
+    .content {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        color: brown;
+        position: relative;
+    }
+
+    .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: cursive;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+
+
+    }
+
+    .content h1 {
+        font-family: 'Times New Roman';
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+
+    }
+
+    .content .cn {
+        width: 160px;
+        height: 40px;
+        background-color: rgb(227, 159, 135);
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+
+    .content.cn a {
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #fff;
+    }
+
+    .content span {
+        color: coral;
+
+    }
+
+    .form {
+        width: 250px;
+        height: 350px;
+        background: linear-gradient(to top, rgb(192, 113, 84), rgb(226, 88, 88))50%;
+        position: absolute;
+        top: -20px;
+        left: 870px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 50px white;
+
+    }
+
+    .form h2 {
+        width: 220px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: brown;
+        font-size: 22px;
+        background-color: rgb(224, 151, 124);
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+
+    }
+
+    .form input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: coral;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: cursive;
+
+    }
+
+    ::placeholder {
+        color: coral;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btnn {
+        width: 240px;
+        height: 40px;
+        background: brown;
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .btnn:hover {
+        background: rgb(214, 200, 200);
+        color: coral;
+    }
+
+    .btnn a {
+        text-decoration: none;
+        color: coral;
+        font-weight: bold;
+
+    }
+
+    .form .link {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .form .link a {
+
+        text-decoration: none;
+        color: black;
+    }
+
+    .liw {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main1">
+
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">UPSC World!</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href=""> <i class="fa fa-home" style="display: inline; "></i>&nbsp;&nbsp;HOME </a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SYLLABUS</a></li>
+                        <li><a href="">LIBRARY</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type to text">
+                    <a href="#"><button class="btn">Search</button></a>
+                </div>
+            </div>
+            <div class="content">
+                <h1>UPSC Prepration <br><span>Syllabus&Library</span> <br>Courses </h1>
+                    <p class="par">Here different way to prepared for everyone dreams come true and bright future <br>Basics  NCERT
+                        /Statndard books/Test Series/Weeekly doubt session.
+                    <br>Get ready and prepared for the practice and start with Zero to Hero
+                </p>
+
+                <button class="cn"><a href="#">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Welcome</h2>
+                    <input type="email" placeholder="Enter Email here">
+                    <input type="password" placeholder="Enter password here">
+                    <button class="btnn"><a href="">Login</a></button>
+                    <p class="link">Don't have an account? <br>
+                        <a href="/resister.html">Resister</a> here</a>
+                    </p>
+                    <p class="liw"> Log in with</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+<body>
+    
+</body>
+</html>
